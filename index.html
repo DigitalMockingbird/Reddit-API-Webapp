@@ -1,0 +1,29 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Reddit API Webapp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="api.js"></script>
+</head>
+
+<body>
+<div id="w">
+    <div id="logo">
+        <h1>Reddit API Domain Search</h1>
+    </div>
+
+    <p>Enter a domain without <code>http://www.</code> to browse recent submissions in Reddit.</p>
+
+    <div id="searchfield">
+        <form id="domainform" name="domainform">
+            <input type="text" class="search" id="s" name="s" placeholder="ex: youtube.com" />
+            <br />
+            <input type="button" class="submit" id="sub" name="submit" value="Search" />
+            <input type="button" class="reset" id="res" name="reset" value="Reset" />
+        </form>
+    </div>
+
+    <div id="content"></div>
+</div>
+</body>
